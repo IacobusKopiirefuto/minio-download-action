@@ -1,4 +1,6 @@
 #!/bin/sh -l
+set -euxo pipefail
+
 export PATH=$PATH:/minio-binaries/
 
 mc alias set action "$ENDPOINT" "$ACCESS_KEY" "$SECRET_KEY" --api "$API"

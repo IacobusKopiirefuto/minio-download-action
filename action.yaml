@@ -1,6 +1,6 @@
 name: 'Minio download'
 description: 'Download a file from S3 with Minio CLI'
-author: 'ActiveChooN'
+author: 'bratislava'
 inputs:
   endpoint:
     description: 'Endpoint of object storage host'
