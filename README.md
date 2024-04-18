@@ -8,7 +8,7 @@ Add this action to your `workflow.md`
 
 ```yaml
 - name: 'Minio download'
-  uses: 'ActiveChooN/minio-download-action@v1'
+  uses: 'bratislava/minio-download-action@v1'
   with:
     endpoint: ${{ secrets.ENDPOINT }}
     access_key: ${{ secrets.ACCESS_KEY }}
