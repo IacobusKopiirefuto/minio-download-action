@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
-set -euxo pipefail
+#!/bin/sh
 
-mc alias set action $ENDPOINT $ACCESS_KEY $SECRET_KEY --api $API
+mc alias set action "$ENDPOINT" "$ACCESS_KEY" "$SECRET_KEY" --api "$API"
 
 FULL_REMOTE_PATH=action
 
@@ -11,4 +10,4 @@ fi
 
 FULL_REMOTE_PATH="$FULL_REMOTE_PATH/$1"
 
-mc cp $ARGS $FULL_REMOTE_PATH $2
+mc cp "$ARGS" "$FULL_REMOTE_PATH" "$2"
