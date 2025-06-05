@@ -1,7 +1,7 @@
 #!/bin/sh -l
 set -euxo pipefail
 
-export PATH=$PATH:/minio-binaries/
+export PATH="$PATH:/minio-binaries/"
 
 mc alias set action "$ENDPOINT" "$ACCESS_KEY" "$SECRET_KEY" --api "$API"
 
@@ -13,4 +13,4 @@ fi
 
 FULL_REMOTE_PATH="$FULL_REMOTE_PATH/$1"
 
-mc cp $ARGS $FULL_REMOTE_PATH $2
+mc cp "$ARGS" "$FULL_REMOTE_PATH" "$2"
